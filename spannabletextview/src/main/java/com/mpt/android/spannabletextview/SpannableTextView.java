@@ -1,7 +1,5 @@
 package com.mpt.android.spannabletextview;
 
-import java.util.ArrayList;
-import java.util.List;
 import ohos.agp.components.AttrSet;
 import ohos.agp.components.Image;
 import ohos.agp.components.Text;
@@ -10,6 +8,8 @@ import ohos.agp.text.RichTextBuilder;
 import ohos.agp.text.TextForm;
 import ohos.agp.utils.Color;
 import ohos.app.Context;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * SpannableTextView.java  is for extra power to #TextView.
@@ -27,6 +27,8 @@ public class SpannableTextView extends Text {
     }
     /**
      * To specify the context of an object in SpannableTextView.
+     *
+     * @param context context
      */
 
     public SpannableTextView(Context context) {
@@ -35,6 +37,10 @@ public class SpannableTextView extends Text {
     }
     /**
      * To specify the context and attributeset  of an object in SpannableTextView.
+     *
+     * @param context context
+     *
+     * @param attrSet attrSet
      */
 
     public SpannableTextView(Context context, AttrSet attrSet) {
@@ -43,6 +49,12 @@ public class SpannableTextView extends Text {
     }
     /**
      * To define the context ,attributeset and style.
+     *
+     * @param context context
+     *
+     * @param attrSet attrSet
+     *
+     * @param defStyleAttr defStyleAttr
      */
 
     public SpannableTextView(Context context, AttrSet attrSet, int defStyleAttr) {
@@ -74,6 +86,10 @@ public class SpannableTextView extends Text {
 
     /**
      * Replaces the Slice at the specified location with this new Slice.
+     *
+     * @param location location
+     *
+     * @param newSlice newSlice
      */
 
     public void replaceSliceAt(int location, SpannableStyles newSlice) {
@@ -82,6 +98,8 @@ public class SpannableTextView extends Text {
 
     /**
      * Removes the Slice at this specified location.
+     *
+     * @param location location
      */
 
     public void removeSlice(int location) {
@@ -90,6 +108,8 @@ public class SpannableTextView extends Text {
 
     /**
      * Get a specific {@link SpannableStyles} in position index.
+     *
+     * @param location location
      */
 
     public SpannableStyles getSlice(int location) {
@@ -208,6 +228,8 @@ public class SpannableTextView extends Text {
 
     /**
      * Change text color of all pieces of textview.
+     *
+     * @param textColor textColor
      */
     public void changeTextColor(int textColor) {
         for (SpannableStyles slice : sliceList) {
@@ -218,6 +240,10 @@ public class SpannableTextView extends Text {
 
     /**
      * To set the all spans.
+     *
+     * @param what what
+     *
+     * @param builder builder
      */
     public RichTextBuilder setSpan(Object what, RichTextBuilder builder) {
         builder.mergeForm((TextForm) what);

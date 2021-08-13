@@ -1,13 +1,8 @@
 package com.mpt.android.spannabletextview.slice;
 
-import com.mpt.android.spannabletextview.OnTextClick;
-import com.mpt.android.spannabletextview.ResourceTable;
-import com.mpt.android.spannabletextview.SpannableStyles;
-import com.mpt.android.spannabletextview.SpannableTextView;
-import java.io.IOException;
+import static ohos.agp.components.ComponentContainer.LayoutConfig.MATCH_CONTENT;
 import ohos.aafwk.ability.AbilitySlice;
 import ohos.aafwk.content.Intent;
-import static ohos.agp.components.ComponentContainer.LayoutConfig.MATCH_CONTENT;
 import ohos.agp.colors.RgbPalette;
 import ohos.agp.components.Component;
 import ohos.agp.components.DirectionalLayout;
@@ -20,6 +15,11 @@ import ohos.global.resource.NotExistException;
 import ohos.global.resource.WrongTypeException;
 import ohos.hiviewdfx.HiLog;
 import ohos.hiviewdfx.HiLogLabel;
+import com.mpt.android.spannabletextview.OnTextClick;
+import com.mpt.android.spannabletextview.ResourceTable;
+import com.mpt.android.spannabletextview.SpannableStyles;
+import com.mpt.android.spannabletextview.SpannableTextView;
+import java.io.IOException;
 
 /**
  * To display all Spans.

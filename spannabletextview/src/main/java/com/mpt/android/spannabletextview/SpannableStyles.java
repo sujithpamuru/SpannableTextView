@@ -97,6 +97,8 @@ public class SpannableStyles {
     public static final float DEFAULT_RELATIVE_TEXT_SIZE = 1;
     /**
      * To specify the text properties for spans.
+     *
+     * @param builder builder
      */
 
     public SpannableStyles(Builder builder) {
@@ -236,6 +238,8 @@ public class SpannableStyles {
 
         /**
          * Sets the sets the corner radius.
+         *
+         * @param cornerRadius cornerRadius
          */
 
         public Builder setCornerRadius(int cornerRadius) {
@@ -251,7 +255,7 @@ public class SpannableStyles {
          * @return a Builder
          */
         public Builder setImageResource(int imageResource) {
-            Builder.imageResource = imageResource;
+            this.imageResource = imageResource;
             return this;
         }
 
@@ -375,6 +379,8 @@ public class SpannableStyles {
 
     /**
      * Sets the text color of this Piece.
+     *
+     * @param textColor textColor
      */
 
     public void setTextColor(int textColor) {
@@ -383,6 +389,8 @@ public class SpannableStyles {
 
     /**
      * Sets the text of this Slice.
+     *
+     * @param text text
      */
 
     public void setText(String text) {
