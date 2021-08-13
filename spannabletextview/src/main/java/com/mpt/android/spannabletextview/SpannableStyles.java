@@ -114,7 +114,7 @@ public class SpannableStyles {
         this.strike = builder.strike;
         this.onTextClick = builder.onTextClick;
         this.sliceId = builder.sliceId;
-        this.imageResource = Builder.imageResource;
+        this.imageResource = builder.imageResource;
         this.isRounded = builder.isRounded;
         this.cornerRadius = builder.cornerRadius;
     }
@@ -148,7 +148,7 @@ public class SpannableStyles {
          * To Specify the imageResource.
          */
 
-        private static int imageResource;
+        private int imageResource;
         /**
          * To specify the default Absolute text size.
          */
